@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="cal">
+
+<input type="text" id="d" placeholder="0" readonly>
+
+<br>
+
+<button onclick="d.value=''">AC</button>
+<button onclick="d.value+='%'">%</button>
+<button onclick="d.value=d.value.slice(0,-1)">⌫</button>
+<button onclick="d.value+='/'">÷</button>
+
+<br>
+
+<button onclick="d.value+='7'">7</button>
+ <button onclick="d.value+='8'">8</button>
+  <button onclick="d.value+='9'">9</button>
+   <button onclick="d.value+='*'">×</button>
+
+<br>
+
+<button onclick="d.value+='4'">4</button>
+<button onclick="d.value+='5'">5</button>
+<button onclick="d.value+='6'">6</button>
+<button onclick="d.value+='-'">-</button>
+
+<br>
+
+<button onclick="d.value+='1'">1</button>
+<button onclick="d.value+='2'">2</button>
+<button onclick="d.value+='3'">3</button>
+<button onclick="d.value+='+'">+</button>
+
+<br>
+
+<button onclick="d.value+='0'">0</button>
+<button onclick="d.value+='.'">.</button>
+<button onclick="d.value=eval(d.value)">=</button>
+
+</div>
+
+<!-- 
+    <input/>
+    <button>click me</button>
+    <h1>hello</h1>
+    <h2>world</h2>
+    <h3>12-05-26</h3> --> 
+    <script scr="index.js"></script>
+</body>
+</html>

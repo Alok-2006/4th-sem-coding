@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+let promise =new Promise((res,reject)=>{
+        res("hii")
+        reject("hello")
+
+        setTimeout(()=>{
+            res()
+        })
+    },3000) 
+
+    console.log(promise)
+
+
+
+function step1(){
+    return new Promise((res,reject)=>{
+        setTimeout(()=>{
+            console.log("selected");
+            res()
+            
+        },5000)
+    })
+}
+
+
+function step2(){
+    return new Promise((res,reject)=>{
+        setTimeout(()=>{
+            console.log("caption");
+            res()
+            
+        },4000)
+    })
+}
+
+async function call() {
+    await step1()
+    console.log("hii");
+    
+    await step2()
+}
+call()
+ </script>
+</body>
+</html>
